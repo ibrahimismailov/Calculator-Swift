@@ -140,6 +140,7 @@ class ViewController: UIViewController {
 //        label.text = "\(resault)"
 //        isNewValue = true
 //        }
+    //
      
     func colculate1 (){
         guard let oper = oper else {
