@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     var oper:Operation? = nil
     var previousOperation:String? = nil
     var resault:Int = 0
-    var newValue:Int = 0 
+    var newValue:Int = 0
     
     
    
@@ -64,7 +64,7 @@ class ViewController: UIViewController {
     @IBAction func onDot(_ sender: Any) {
     }
   
-    @IBAction func onAdd(_ sender: Any) {
+    @IBAction func onAdd(_ sender: Any) { 
         oper = .Add
         previousOperation = nil
         isNewValue = true
