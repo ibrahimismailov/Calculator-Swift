@@ -13,18 +13,18 @@ enum Operation{
     case Divide
     case Null
 }
-//
-//
-//class ViewController: UIViewController {
-//
-//    @IBOutlet weak var label: UILabel!
-//    var isNewValue = true
-//    var operations:String? = nil
-//    var oper:Operation? = nil
-//    var previousOperation:String? = nil
-//    var resault:Int = 0
-//    var newValue:Int = 0
-//
+
+
+class ViewController: UIViewController {
+
+    @IBOutlet weak var label: UILabel!
+    var isNewValue = true
+    var operations:String? = nil
+    var oper:Operation? = nil
+    var previousOperation:String? = nil
+    var resault:Int = 0
+    var newValue:Int = 0
+
 //
 //
 //    @IBAction func onZero(_ sender: Any) {
@@ -152,7 +152,7 @@ enum Operation{
 //        }
 //
 //
-//    }
+    }
 //
 //
 //
