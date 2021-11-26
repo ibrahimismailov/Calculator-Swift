@@ -6,7 +6,7 @@
 //
 
 import UIKit
-enum Operation{ 
+enum Operation{
     case Add
     case Sub
     case Multiply
@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     var oper:Operation? = nil
     var previousOperation:String? = nil
     var resault:Int = 0
-    var newValue:Int = 0
+    var newValue:Int = 0 
     
     
    
