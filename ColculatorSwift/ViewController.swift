@@ -117,30 +117,7 @@ class ViewController: UIViewController {
     func getInteger() ->Int {
         return Int(label.text ?? "0") ?? 0
     }
-//    func colculate (){
-//        guard let operations = operations else {
-//            return
-//        }
-//        if previousOperation != operations {
-//            newValue = getInteger()
-//        }
-//        if operations == "+" {
-//            resault += newValue
-//        }else if operations == "-" {
-//            resault -= newValue
-//        }else if operations == "*" {
-//            resault *= newValue
-//        }else if operations == "/"{
-//            resault /= newValue
-//        }else {
-//            return
-//        }
-//
-//        previousOperation = "\(oper ?? .Null)"
-//        label.text = "\(resault)"
-//        isNewValue = true
-//        }
-    //
+
      
     func colculate1 (){
         guard let oper = oper else {
