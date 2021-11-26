@@ -28,34 +28,34 @@ class ViewController: UIViewController {
 
 
     @IBAction func onZero(_ sender: Any) {
-        //addDigit(_digit: "0")
+        addDigit(_digit: "0")
     }
     @IBAction func onOne(_ sender: Any) {
-       // addDigit(_digit: "1")
+        addDigit(_digit: "1")
     }
     @IBAction func onTwo(_ sender: Any) {
-       // addDigit(_digit: "2")
+        addDigit(_digit: "2")
     }
     @IBAction func onThree(_ sender: Any) {
-      //  addDigit(_digit: "3")
+        addDigit(_digit: "3")
     }
     @IBAction func onFour(_ sender: Any) {
-       // addDigit(_digit: "4")
+        addDigit(_digit: "4")
     }
     @IBAction func onFive(_ sender: Any) {
-       // addDigit(_digit: "5")
+        addDigit(_digit: "5")
     }
     @IBAction func onSix(_ sender: Any) {
-       // addDigit(_digit: "6")
+        addDigit(_digit: "6")
     }
     @IBAction func onSeven(_ sender: Any) {
-      //  addDigit(_digit: "7")
+        addDigit(_digit: "7")
     }
     @IBAction func onEight(_ sender: Any) {
-    //    addDigit(_digit: "8")
+        addDigit(_digit: "8")
     }
     @IBAction func onNine(_ sender: Any) {
-   //     addDigit(_digit: "9")
+        addDigit(_digit: "9")
     }
     @IBAction func onEqual(_ sender: Any) {
 
@@ -118,45 +118,45 @@ class ViewController: UIViewController {
         return Int(label.text ?? "0") ?? 0
     }
 
-//
-//    func colculate1 (){
-//        guard let oper = oper else {
-//            return
-//        }
-//
-//
-//        if Operation.Null != oper {
-//            newValue = getInteger()
-//        }
-//        if oper == .Add{
-//            resault += newValue
-//        }else if oper == .Sub {
-//            resault -= newValue
-//        }else if oper == .Multiply {
-//            resault *= newValue
-//        }else if oper == .Divide{
-//
-//            if newValue != 0 {
-//            resault /= newValue
-//            }else {
-//                resault = 0
-//            }
-//
-//        }else {
-//            return
-//        }
-//
-//        previousOperation = "\(oper)"
-//        label.text = "\(resault)"
-//        isNewValue = true
-//        }
-//
-//
+
+    func colculate1 (){
+        guard let oper = oper else {
+            return
+        }
+
+
+        if Operation.Null != oper {
+            newValue = getInteger()
+        }
+        if oper == .Add{
+            resault += newValue
+        }else if oper == .Sub {
+            resault -= newValue
+        }else if oper == .Multiply {
+            resault *= newValue
+        }else if oper == .Divide{
+
+            if newValue != 0 {
+            resault /= newValue
+            }else {
+                resault = 0
+          }
+
+        }else {
+            return
+        }
+
+        previousOperation = "\(oper)"
+        label.text = "\(resault)"
+        isNewValue = true
+        }
+
+
     }
-//
-//
-//
-//
-//
-//
-//
+
+
+
+
+
+
+
