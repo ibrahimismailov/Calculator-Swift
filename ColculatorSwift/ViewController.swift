@@ -63,61 +63,61 @@ class ViewController: UIViewController {
     }
     @IBAction func onDot(_ sender: Any) {
     }
-//
-//    @IBAction func onAdd(_ sender: Any) {
-//        oper = .Add
-//        previousOperation = nil
-//        isNewValue = true
-//        resault = getInteger()
-//    }
-//    @IBAction func onSub(_ sender: Any) {
-//
-//        oper = .Sub
-//        previousOperation = nil
-//        isNewValue = true
-//        resault = getInteger()
-//    }
-//    @IBAction func onMultiply(_ sender: Any) {
-//        oper = .Multiply
-//        previousOperation = nil
-//        isNewValue = true
-//        resault = getInteger()
-//    }
-//    @IBAction func onDivide(_ sender: Any) {
-//        oper = .Divide
-//        previousOperation = nil
-//        isNewValue = true
-//        resault = getInteger()
-//
-//    }
-//    @IBAction func onReset(_ sender: Any) {
-//        oper = .Null
-//        isNewValue = true
-//        resault = 0
-//        newValue = 0
-//        label.text = "0"
-//    }
-//
-//
-//
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//        // Do any additional setup after loading the view.
-//    }
-//    func addDigit(_digit:String){
-//        if isNewValue {
-//        label.text = ""
-//        isNewValue = false
-//        }
-//        var digits = label.text
-//        digits?.append(_digit)
-//        label.text = digits
-//
-//    }
-//    func getInteger() ->Int {
-//        return Int(label.text ?? "0") ?? 0
-//    }
-//
+
+    @IBAction func onAdd(_ sender: Any) {
+        oper = .Add
+        previousOperation = nil
+        isNewValue = true
+        resault = getInteger()
+    }
+    @IBAction func onSub(_ sender: Any) {
+
+        oper = .Sub
+        previousOperation = nil
+        isNewValue = true
+        resault = getInteger()
+    }
+    @IBAction func onMultiply(_ sender: Any) {
+        oper = .Multiply
+        previousOperation = nil
+        isNewValue = true
+        resault = getInteger()
+    }
+    @IBAction func onDivide(_ sender: Any) {
+        oper = .Divide
+        previousOperation = nil
+        isNewValue = true
+        resault = getInteger()
+
+    }
+    @IBAction func onReset(_ sender: Any) {
+        oper = .Null
+        isNewValue = true
+        resault = 0
+        newValue = 0
+        label.text = "0"
+    }
+
+
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+    }
+    func addDigit(_digit:String){
+        if isNewValue {
+        label.text = ""
+        isNewValue = false
+        }
+        var digits = label.text
+        digits?.append(_digit)
+        label.text = digits
+
+    }
+    func getInteger() ->Int {
+        return Int(label.text ?? "0") ?? 0
+    }
+
 //
 //    func colculate1 (){
 //        guard let oper = oper else {
