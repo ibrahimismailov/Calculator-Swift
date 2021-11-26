@@ -64,7 +64,7 @@ class ViewController: UIViewController {
     @IBAction func onDot(_ sender: Any) {
     }
   
-    @IBAction func onAdd(_ sender: Any) { 
+    @IBAction func onAdd(_ sender: Any) {
         oper = .Add
         previousOperation = nil
         isNewValue = true
@@ -135,7 +135,12 @@ class ViewController: UIViewController {
         }else if oper == .Multiply {
             resault *= newValue
         }else if oper == .Divide{
+            
+            if newValue != 0 {
             resault /= newValue
+            }else {
+                resault = 0
+            }
             
         }else {
             return
