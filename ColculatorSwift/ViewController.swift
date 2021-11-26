@@ -6,7 +6,7 @@
 //
 
 import UIKit
-enum Operation{
+enum Operation{ 
     case Add
     case Sub
     case Multiply
