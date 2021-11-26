@@ -5,18 +5,18 @@
 ////  Created by Rinat on 25.11.2021.
 ////
 //
-//import UIKit
-////enum Operation{
-////    case Add
-////    case Sub
-////    case Multiply
-////    case Divide
-////    case Null
-////}
+import UIKit
+enum Operation{
+    case Add
+    case Sub
+    case Multiply
+    case Divide
+    case Null
+}
 //
 //
 //class ViewController: UIViewController {
-//  
+//
 //    @IBOutlet weak var label: UILabel!
 //    var isNewValue = true
 //    var operations:String? = nil
@@ -24,9 +24,9 @@
 //    var previousOperation:String? = nil
 //    var resault:Int = 0
 //    var newValue:Int = 0
-//    
-//    
-//   
+//
+//
+//
 //    @IBAction func onZero(_ sender: Any) {
 //        addDigit(_digit: "0")
 //    }
@@ -58,12 +58,12 @@
 //        addDigit(_digit: "9")
 //    }
 //    @IBAction func onEqual(_ sender: Any) {
-//        
+//
 //        colculate1()
 //    }
 //    @IBAction func onDot(_ sender: Any) {
 //    }
-//  
+//
 //    @IBAction func onAdd(_ sender: Any) {
 //        oper = .Add
 //        previousOperation = nil
@@ -71,7 +71,7 @@
 //        resault = getInteger()
 //    }
 //    @IBAction func onSub(_ sender: Any) {
-//        
+//
 //        oper = .Sub
 //        previousOperation = nil
 //        isNewValue = true
@@ -88,7 +88,7 @@
 //        previousOperation = nil
 //        isNewValue = true
 //        resault = getInteger()
-//       
+//
 //    }
 //    @IBAction func onReset(_ sender: Any) {
 //        oper = .Null
@@ -97,9 +97,9 @@
 //        newValue = 0
 //        label.text = "0"
 //    }
-//    
-//    
-//    
+//
+//
+//
 //    override func viewDidLoad() {
 //        super.viewDidLoad()
 //        // Do any additional setup after loading the view.
@@ -112,19 +112,19 @@
 //        var digits = label.text
 //        digits?.append(_digit)
 //        label.text = digits
-//        
+//
 //    }
 //    func getInteger() ->Int {
 //        return Int(label.text ?? "0") ?? 0
 //    }
 //
-//     
+//
 //    func colculate1 (){
 //        guard let oper = oper else {
 //            return
 //        }
-//       
-//       
+//
+//
 //        if Operation.Null != oper {
 //            newValue = getInteger()
 //        }
@@ -135,27 +135,27 @@
 //        }else if oper == .Multiply {
 //            resault *= newValue
 //        }else if oper == .Divide{
-//            
+//
 //            if newValue != 0 {
 //            resault /= newValue
 //            }else {
 //                resault = 0
 //            }
-//            
+//
 //        }else {
 //            return
 //        }
-//       
+//
 //        previousOperation = "\(oper)"
 //        label.text = "\(resault)"
 //        isNewValue = true
 //        }
-//    
-//    
+//
+//
 //    }
-//    
-//   
-//    
+//
+//
+//
 //
 //
 //
