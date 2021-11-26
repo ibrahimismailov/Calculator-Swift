@@ -148,7 +148,6 @@
 				F53377DD89F9ACCA89686E58 /* Pods-ColculatorSwift.debug.xcconfig */,
 				2327042121DC431F64CAA57E /* Pods-ColculatorSwift.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

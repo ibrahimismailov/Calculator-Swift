@@ -6,6 +6,8 @@
 ////
 //
 import UIKit
+import CLTypingLabel
+
 enum Operation{
     case Add
     case Sub
@@ -16,7 +18,8 @@ enum Operation{
 
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var cltyinglbl: CLTypingLabel!
+    
     @IBOutlet weak var label: UILabel!
     var isNewValue = true
     var operations:String? = nil
@@ -59,7 +62,7 @@ class ViewController: UIViewController {
     }
     @IBAction func onEqual(_ sender: Any) {
 
-     //   colculate1()
+       colculate1()
     }
     @IBAction func onDot(_ sender: Any) {
     }
@@ -102,7 +105,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        cltyinglbl.text = "ColculatorSwift"
+        
+        
     }
     func addDigit(_digit:String){
         if isNewValue {
@@ -130,14 +135,25 @@ class ViewController: UIViewController {
         }
         if oper == .Add{
             resault += newValue
+            isNewValue = true
+           
         }else if oper == .Sub {
             resault -= newValue
+            isNewValue = true
+            
+            
         }else if oper == .Multiply {
             resault *= newValue
+            isNewValue = true
+            
+            
         }else if oper == .Divide{
 
             if newValue != 0 {
             resault /= newValue
+                isNewValue = true
+               
+                
             }else {
                 resault = 0
           }
