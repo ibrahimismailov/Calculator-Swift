@@ -62,9 +62,10 @@ class ViewController: UIViewController {
     }
     @IBAction func onEqual(_ sender: Any) {
 
-       colculate1()
+       colculate()
     }
     @IBAction func onDot(_ sender: Any) {
+        addDigit(_digit: ".")
     }
 
     @IBAction func onAdd(_ sender: Any) {
@@ -122,50 +123,79 @@ class ViewController: UIViewController {
     func getInteger() ->Int {
         return Int(label.text ?? "0") ?? 0
     }
-
-
-    func colculate1 (){
+    func colculate (){
         guard let oper = oper else {
             return
         }
-
-
         if Operation.Null != oper {
             newValue = getInteger()
         }
-        if oper == .Add{
+        switch oper {
+        case .Add:
             resault += newValue
-            isNewValue = true
            
-        }else if oper == .Sub {
+            
+        case .Sub:
             resault -= newValue
-            isNewValue = true
-            
-            
-        }else if oper == .Multiply {
+        case .Multiply:
             resault *= newValue
-            isNewValue = true
-            
-            
-        }else if oper == .Divide{
-
+        case .Divide:
             if newValue != 0 {
             resault /= newValue
-                isNewValue = true
-               
-                
+            isNewValue = true
             }else {
                 resault = 0
-          }
-
-        }else {
-            return
+            }
+        case .Null:
+            isNewValue = false
         }
-
         previousOperation = "\(oper)"
-        label.text = "\(resault)"
-        isNewValue = true
-        }
+             label.text = "\(resault)"
+             isNewValue = true
+       
+    }
+//    func colculate1 (){
+//        guard let oper = oper else {
+//            return
+//        }
+//
+//
+//        if Operation.Null != oper {
+//            newValue = getInteger()
+//        }
+//        if oper == .Add{
+//            resault += newValue
+//            isNewValue = true
+//
+//        }else if oper == .Sub {
+//            resault -= newValue
+//            isNewValue = true
+//
+//
+//        }else if oper == .Multiply {
+//            resault *= newValue
+//            isNewValue = true
+//
+//
+//        }else if oper == .Divide{
+//
+//            if newValue != 0 {
+//            resault /= newValue
+//                isNewValue = true
+//
+//
+//            }else {
+//                resault = 0
+//          }
+//
+//        }else {
+//            return
+//        }
+//
+//        previousOperation = "\(oper)"
+//        label.text = "\(resault)"
+//        isNewValue = true
+//        }
 
 
     }
