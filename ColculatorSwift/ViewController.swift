@@ -154,48 +154,6 @@ class ViewController: UIViewController {
              isNewValue = true
        
     }
-//    func colculate1 (){
-//        guard let oper = oper else {
-//            return
-//        }
-//
-//
-//        if Operation.Null != oper {
-//            newValue = getInteger()
-//        }
-//        if oper == .Add{
-//            resault += newValue
-//            isNewValue = true
-//
-//        }else if oper == .Sub {
-//            resault -= newValue
-//            isNewValue = true
-//
-//
-//        }else if oper == .Multiply {
-//            resault *= newValue
-//            isNewValue = true
-//
-//
-//        }else if oper == .Divide{
-//
-//            if newValue != 0 {
-//            resault /= newValue
-//                isNewValue = true
-//
-//
-//            }else {
-//                resault = 0
-//          }
-//
-//        }else {
-//            return
-//        }
-//
-//        previousOperation = "\(oper)"
-//        label.text = "\(resault)"
-//        isNewValue = true
-//        }
 
 
     }
